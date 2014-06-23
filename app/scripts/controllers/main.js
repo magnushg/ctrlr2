@@ -8,15 +8,12 @@
  * Controller of the yoAngularApp
  */
 angular.module('yoAngularApp')
-  .controller('MainCtrl', function ($scope, configService, automatrService, chartConfigService) {
+  .controller('MainCtrl', function ($scope, automatrService, chartConfigService) {
     $scope.temperature = automatrService.getTemperature();
     $scope.brightness = automatrService.getBrightness();
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-    
+    $scope.lightswitchToggle = automatrService.lightswitch();
+    $scope.lightswitchToggle.$bind($scope, 'lightToggle');
+
     $scope.temperature.$on('loaded', function (data) {
     	$scope.thermometerChartConfig = chartConfigService.createThermometerConfig(data);
     });
