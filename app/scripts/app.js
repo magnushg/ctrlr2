@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'firebase',
-    'highcharts-ng'
+    'highcharts-ng',
+    'mgcrea.ngStrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider

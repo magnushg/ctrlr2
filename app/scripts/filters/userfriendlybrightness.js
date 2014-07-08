@@ -27,3 +27,17 @@ angular.module('yoAngularApp')
         }
     };
   });
+
+  angular.module('yoAngularApp')
+    .filter('switchButtonText', function() {
+    return function (arg) {
+        return (arg) ? 'Turn OFF' : 'Turn ON';
+    };
+});
+
+angular.module('yoAngularApp')
+    .filter('switchButtonClass', function() {
+    return function (arg) {
+        return (arg) ? 'btn btn-success' : 'btn btn-danger';
+    };
+});

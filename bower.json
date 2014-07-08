@@ -14,7 +14,9 @@
     "angular-route": "1.2.16",
     "firebase": "latest",
     "highchart-ng": "latest",
-    "underscore": "latest"
+    "underscore": "latest",
+    "angular-strap": "~2.0.0"
+
   },
   "devDependencies": {
     "angular-mocks": "1.2.16",

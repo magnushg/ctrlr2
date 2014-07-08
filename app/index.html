@@ -23,9 +23,9 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/statistics">Statistics</a></li>
+        <ul class="nav nav-pills pull-right" ng-controller="navCtrl">
+          <li ng-class="navClass('home')"><a ng-href="#">Home</a></li>
+          <li ng-class="navClass('statistics')"><a ng-href="#/statistics">Statistics</a></li>
         </ul>
         <h3 class="text-muted">ctrlr</h3>
       </div>
@@ -71,6 +71,8 @@
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/highchart-ng/dist/highcharts-ng.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -78,6 +80,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/statistics.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
         <script src="scripts/services/configservice.js"></script>
         <script src="scripts/services/automatrservice.js"></script>
         <script src="scripts/filters/userfriendlybrightness.js"></script>

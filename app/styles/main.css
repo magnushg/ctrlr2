@@ -4,6 +4,20 @@ body {
   padding-bottom: 20px;
 }
 
+.panel .panel-body .center-label {
+  font-size: 3em;
+  display: block;
+  text-align: center;
+}
+
+.panel .panel-heading {
+  font-size: 3em;
+}
+
+.panel .panel-body>button {
+  width: 100%
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
