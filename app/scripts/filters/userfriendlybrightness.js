@@ -31,7 +31,7 @@ angular.module('yoAngularApp')
   angular.module('yoAngularApp')
     .filter('switchButtonText', function() {
     return function (arg) {
-        return (arg) ? 'Turn OFF' : 'Turn ON';
+        return (arg) ? 'Light is ON' : 'Ligth is OFF';
     };
 });
 
