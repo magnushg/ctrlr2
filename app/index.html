@@ -30,7 +30,8 @@
         <h3 class="text-muted">ctrlr</h3>
       </div>
       <div ng-view=""></div>
-      <div class="footer">        
+      <div class="footer" ng-controller="footerCtrl">
+        <span class="label label-primary pull-right">Last heartbeat {{heartBeat.value | date: 'dd/MM HH:mm:ss'}}</span>    
       </div>
     </div>
 
@@ -78,6 +79,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/statistics.js"></script>
         <script src="scripts/controllers/nav.js"></script>
+        <script src="scripts/controllers/footer.js"></script>
         <script src="scripts/services/configservice.js"></script>
         <script src="scripts/services/automatrservice.js"></script>
         <script src="scripts/filters/userfriendlybrightness.js"></script>

@@ -11,7 +11,7 @@ angular.module('yoAngularApp')
   .controller('MainCtrl', function ($scope, automatrService, chartConfigService) {
     $scope.temperature = automatrService.getTemperature();
     $scope.brightness = automatrService.getBrightness();
-
+   
     $scope.lightswitchToggle = automatrService.lightswitch();
     $scope.lightswitchToggle.$bind($scope, 'lightToggle');
 

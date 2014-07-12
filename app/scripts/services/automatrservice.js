@@ -17,6 +17,7 @@ angular.module('yoAngularApp')
     var proximityRef = new Firebase("https://{0}.firebaseio.com/proximity".format(firebaseName));
     var brightnessRef = new Firebase("https://{0}.firebaseio.com/brightness".format(firebaseName));
     var logRef = new Firebase("https://{0}.firebaseio.com/environmentLog".format(firebaseName));
+    var heartBeatRef = new Firebase("https://{0}.firebaseio.com/heartBeat".format(firebaseName));
 
     // Public API here
     return {
@@ -37,6 +38,9 @@ angular.module('yoAngularApp')
       },
       environmentLog: function () {
         return $firebase(logRef);
+      },
+      getHeartBeat: function() {
+        return $firebase(heartBeatRef)
       }
     };
   });
