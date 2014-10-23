@@ -9,6 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link href="http://fonts.googleapis.com/css?family=Alfa+Slab+One|Droid+Sans+Mono|Droid+Sans" rel="stylesheet" type="text/css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -27,11 +28,11 @@
           <li ng-class="navClass('home')"><a ng-href="#">Home</a></li>
           <li ng-class="navClass('statistics')"><a ng-href="#/statistics">Statistics</a></li>
         </ul>
-        <h3 class="text-muted">ctrlr</h3>
+        <h3 class="main-header">ctrlr</h3>
       </div>
       <div ng-view=""></div>
       <div class="footer" ng-controller="footerCtrl">
-        <span class="label label-primary pull-right">Last heartbeat {{heartBeat.value | date: 'dd/MM HH:mm:ss'}}</span>    
+        <span class="label label-primary pull-right">Last heartbeat {{heartBeat.value | date: 'dd/MM HH:mm:ss'}}</span>
       </div>
     </div>
 

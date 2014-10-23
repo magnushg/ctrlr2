@@ -26,6 +26,11 @@ body {
   padding-right: 15px;
 }
 
+.header h3.main-header {
+  color: #999;
+  font-family: 'Alfa Slab One', cursive;
+}
+
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
