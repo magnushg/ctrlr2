@@ -13,7 +13,7 @@ angular.module('yoAngularApp')
     // ...
 
     var baseConfig = {
-      firebaseEnvironment: 'automatr'
+      firebaseEnvironment: 'automatr-test'
     };
 
     // Public API here
