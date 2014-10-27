@@ -5,13 +5,13 @@ body {
 }
 
 .panel .panel-body .center-label {
-  font-size: 2em;
+  font-size: 3em;
   display: block;
   text-align: center;
 }
 
 .panel .panel-heading {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .panel .panel-body>button {
