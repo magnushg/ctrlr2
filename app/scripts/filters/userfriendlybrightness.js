@@ -35,6 +35,13 @@ angular.module('yoAngularApp')
     };
 });
 
+    angular.module('yoAngularApp')
+    .filter('coffeeSwitchButtonText', function() {
+    return function (arg) {
+        return (arg) ? 'Coffee maker is ON' : 'Coffee maker is OFF';
+    };
+});
+
 angular.module('yoAngularApp')
     .filter('switchButtonClass', function() {
     return function (arg) {

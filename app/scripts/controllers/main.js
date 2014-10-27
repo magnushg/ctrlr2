@@ -15,6 +15,9 @@ angular.module('yoAngularApp')
     $scope.lightswitchToggle = automatrService.lightswitch();
     $scope.lightswitchToggle.$bind($scope, 'lightToggle');
 
+    $scope.coffee = automatrService.coffeeToggle();
+    $scope.coffee.$bind($scope, 'coffeeToggle');
+
     $scope.temperature.$on('loaded', function (data) {
     	$scope.thermometerChartConfig = chartConfigService.createThermometerConfig(data);
     });
